@@ -1,0 +1,72 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+-moz-text-size-adjust:100%;
+-ms-text-size-adjust:100%;
+-webkit-text-size-adjust:100%;
+text-size-adjust:100%;
+  }
+  
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+.show { 
+    border-bottom-style: solid;
+    border-width: medium;
+    padding-bottom: 1rem; 
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+
+.submit { 
+    position: relative;
+    top:2rem;
+    
+}
+
+
+.animated { 
+    width: 200px;
+	height: 100px;
+	background: green;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 1rem;
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out; 
+} 
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
