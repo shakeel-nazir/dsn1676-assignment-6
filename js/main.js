@@ -1,8 +1,8 @@
-$form.on('submit', function (e) {    
-e.preventDefault();          
-
-    
-    var $box = $('.box');
-
-$box.addClass('js-animate');
+var $submit = $('.submit');
+var $box = $('.box')
+                   
+                   
+$submit.on('click', function () {
+    $box.addClass('js-box-animate');
+})
 
